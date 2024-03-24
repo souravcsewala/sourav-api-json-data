@@ -2,7 +2,7 @@
   const getproductdetails= async (req,res)=>{
          try{
                const ProductList=  await ProductModel.find({})
-               res.status(200).json({ALLPRODUCTS :ProductList,serverhits:ProductList.length})
+               res.status(200).json({SOURAV_DATA_API_BACKEND_DEVELOPER :ProductList,serverhits:ProductList.length})
          }catch(error){
               console.log(error)
          }  
