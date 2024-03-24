@@ -43,7 +43,7 @@
                                API_DATA=API_DATA.select(selectFix)
                            }
                             let page= Number(req.query.page) || 1;
-                            let limit=Number(req.query.limit) || 5;
+                            let limit=Number(req.query.limit) || 10;
                             let Skip_Formula=(page-1)*limit;
                             API_DATA=API_DATA.skip(Skip_Formula).limit(limit)
                   const  ProductSortList=  await API_DATA.exec();
