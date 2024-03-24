@@ -38,6 +38,7 @@ app.get("/", (req, res) => {
                     }
                     a {
                         color: blue;
+                         text-decoration: none;
                     }
                 </style>
             </head>
