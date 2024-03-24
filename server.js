@@ -8,46 +8,48 @@
             const {connection}=require("./database/db")
 
    
-
 app.get("/", (req, res) => {
     const htmlContent = `
         <html>
             <head>
                 <style>
-                    h1 {
-                        position: fixed;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -70%);
-                        text-align: center;
-                        font-weight: bolder;
-                        text-transform: uppercase;
-                        font-size: 60px;
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
-                    a{
-                        position: fixed;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -40%);
-                        text-align: center;
+                    h1, h2, a {
                         font-weight: bolder;
                         text-transform: uppercase;
-                        font-size: 60px;
-                     }
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    h1 {
+                        color: red;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        color: green;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        color: blue;
+                    }
                 </style>
             </head>
             <body>
-                <h1 style="color: red;">hii i am sourav ENGINEER WALA</h1>
-                <h2 style="color:green;">welcome to my REST API JSON DATA</h2>
-                <a href="https://sourav-api-json-data.onrender.com/api/data/product-test-api" style="color:blue;">click here</a>
+                <h1>Hi, I am Sourav, ENGINEER WALA</h1>
+                <h2>Welcome to my REST API JSON Data</h2>
+                <a href="https://sourav-api-json-data.onrender.com/api/data/product-test-api">Click here</a>
             </body>
         </html>
     `;
     res.send(htmlContent);
 });
-
-
-
 
 
                 app.use("/api/data",pruductRoute)
