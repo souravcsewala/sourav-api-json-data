@@ -8,7 +8,7 @@
             const {connection}=require("./database/db")
 
      app.get("/", (req, res) => {
-    res.send("<style>h1 {position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: red;}</style><h1>hii i am backend developer</h1>");
+    res.send("<style>h1 {position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: red;font-weight:bold;text-transfrom:uppercase}</style><h1>hii i am backend developer</h1>");
 });
 
 
