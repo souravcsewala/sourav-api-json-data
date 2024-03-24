@@ -8,7 +8,7 @@
             const {connection}=require("./database/db")
 
                 app.get("/",(req,res)=>{
-                       res.send("hii i am backend developer ") 
+                       res.send("<h1>hii i am backend developer </h1>") 
                 })
                 app.use("/api/data",pruductRoute)
 
