@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
             <body>
                 <h1>Hi, I am Sourav, ENGINEER WALA</h1>
                 <h2>Welcome to my REST API JSON Data</h2>
-                <a href="https://sourav-api-json-data.onrender.com/api/data/product-test-api">Click here</a>
+                <a href="https://sourav-api-json-data.onrender.com/api/data/product-api">Click here</a>
             </body>
         </html>
     `;
