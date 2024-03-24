@@ -8,6 +8,7 @@
             const {connection}=require("./database/db")
 
    
+
 app.get("/", (req, res) => {
     const htmlContent = `
         <html>
@@ -19,7 +20,6 @@ app.get("/", (req, res) => {
                         left: 50%;
                         transform: translate(-50%, -70%);
                         text-align: center;
-                        
                         font-weight: bolder;
                         text-transform: uppercase;
                         font-size: 60px;
@@ -27,14 +27,15 @@ app.get("/", (req, res) => {
                 </style>
             </head>
             <body>
-                <h1 style="color: red;">hii i am sourav ENGINEER WALA </h1>
-                <h1 style="color:green;">    welcome to my REST API JSON DATA </h1>
-            < a href="https://sourav-api-json-data.onrender.com/api/data/product-test-api" style="color:blue;">click here </a>
+                <h1 style="color: red;">hii i am sourav ENGINEER WALA</h1>
+                <h1 style="color:green;">welcome to my REST API JSON DATA</h1>
+                <a href="https://sourav-api-json-data.onrender.com/api/data/product-test-api" style="color:blue;">click here</a>
             </body>
         </html>
     `;
     res.send(htmlContent);
 });
+
 
 
 
