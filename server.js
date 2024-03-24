@@ -7,9 +7,10 @@
             const pruductRoute=require("./routes/productroute");
             const {connection}=require("./database/db")
 
-                app.get("/",(req,res)=>{
-                       res.send("<h1>hii i am backend developer </h1>") 
-                })
+                app.get("/", (req, res) => {
+    res.send("<style>h1 {text-align: center; color: red;}</style><h1>hii i am backend developer</h1>");
+});
+
                 app.use("/api/data",pruductRoute)
 
                const Startserver=()=>{
